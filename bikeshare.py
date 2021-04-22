@@ -104,25 +104,16 @@ def time_stats(df):
     months = ['january', 'february', 'march', 'april', 'may', 'june']
     print('Most Popular Start Month: {}'.format(months[popular_month-1].title()))
 
-#    You can check the counts of each unique value here
-#    print(df['month'].value_counts())
-
     df['dow'] = df['Start Time'].dt.weekday_name
 
     popular_dow = df['dow'].mode()[0]
     print('Most Popular Day of the Week: {}'.format(popular_dow))
-
-#    You can check the counts of each unique value here
-#    print(df['dow'].value_counts())
 
     df['hour'] = df['Start Time'].dt.hour
 
     popular_hour = df['hour'].mode()[0]
     popular_hour_conv = pd.to_datetime(popular_hour,  format='%H').strftime("%I:00 %p")
     print('Most Popular Hour: {}'.format(popular_hour_conv))
-
-#    You can check the counts of each unique value here
-#    print(df['hour'].value_counts())
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -136,27 +127,16 @@ def station_stats(df):
 
     popular_startstation = df['Start Station'].mode()[0]
     print('Most Popular Start Station: {}'.format(popular_startstation))
-#
-##    You can check the counts of each unique value here
-#    print(df['Start Station'].value_counts())
 
     popular_endstation = df['End Station'].mode()[0]
     print('Most Popular End Station: {}'.format(popular_endstation))
-#
-##    You can check the counts of each unique value here
-#    print(df['End Station'].value_counts())
 
     df['combotrip'] = df['Start Station'] + ' to ' + df['End Station']
     popular_trip = df['combotrip'].mode()[0]
     print('Most Popular Trip: {}'.format(popular_trip))
-#
-#    You can check the counts of each unique value here
-#    print(df['combotrip'].value_counts())
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-
-#    print(df['hour'].value_counts())
 
 
 def trip_duration_stats(df):
