@@ -7,7 +7,12 @@ April 21, 2021
 BikeSharing Data Analysis
 
 ### Description
-Describe what your project is about and what it does
+This project allows the user to investigate bike share data from three cities. It will ask the user for the city name, month and day of week and present the follow analyses:
+Statistics on the most frequent times of travel
+Statistics on the most popular stations and trips
+Statistics on the total and average trip duration
+Statistics on bikeshare users
+It will also allow the user to see a subset of the data
 
 ### Files used
 Include the files used
