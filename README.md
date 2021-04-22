@@ -15,8 +15,12 @@ Statistics on bikeshare users
 It will also allow the user to see a subset of the data
 
 ### Files used
-Include the files used
+bikeshare.py
+new_york_city.csv
+chicago.csv
+washington.csv
+
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Udacity "Programming for Data Science with Python" course
+Various Q&A's on StackOverflow 
