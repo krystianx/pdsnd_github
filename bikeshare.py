@@ -1,6 +1,8 @@
 import time
 import pandas as pd
 import numpy as np
+# Originally created: April 21, 2021
+# Author: K.X. Perez
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
